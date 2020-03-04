@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script href="sketch.js"></script>
+    <link rel= "stylesheet" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"> </script>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+
+  <div class=headerwork >
+    <a href=index.html>
+        <p id=jonathan class='bold'>← Work</p>
+    </a>
+  <a href='about.html'>
+    <p id=about class='black'>About + Contact</p>
+  </a>
+  </div>
+
+
+  <div class='footer'>
+  <button onclick="myFunction()" class=info>
+  + Info
+  </button>
+  </div>
+
+
+
+
+
+<div id=body2 class='wrappergrid'>
+    <div class='imagepaddding'>
+    <img src="images/IMG_4318_1.gif">
+    </div>
+    <div>
+    <img src="images/IMG_4868.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_1957.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_5275 3.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_7853 3.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_8367 3.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_4712.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_4877.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_5381.jpg">
+    </div>
+    <div>
+    <img src="images/IMG_0480.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_2231.JPG">
+    </div>
+
+</div>
+
+  <div id=supergay class='purple hidden' >
+
+
+    Here is a selection of some failed and unfounded work
+    that has piled up in recent months. In the first project, I used a moire effect to create boxes that produce analog
+    animations powered by a viewer’s change in position. Next: some balloon experiments. I used a vinyl cutter to print on
+    balloon. I also experimented with laying out balloons
+    with fishing wire so that, floating, they line up and make one shape ("no"), and when they lose their helium lift, they make another: a heart (don't read into it).
+    Finally, the letter "R" made of tubes. Inspired by a type specimen I found at Providence Public Library,
+    the idea was to spray paint a ball with glow in the dark pigment and shoot it through the tube circuit fast enough to make the "R" glow continuously.
+    I was frighteningly close. Stay tuned.
+
+
+  </div>
+
+
+
+  <script>
+  $( "button" ).click(function() {
+    $( "#supergay" ).slideToggle( "slow", function(){
+      $( "#supergay" ).removeClass( "hidden" )
+    });
+  });
+  </script>
+
+
+  <script>
+  function myFunction() {
+  var x = document.getElementById("info");
+  if (x.innerHTML === "Info") {
+    x.innerHTML = "✕";
+  } else {
+    x.innerHTML = "Info";
+  }
+  }
+  </script>
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
