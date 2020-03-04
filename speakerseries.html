@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script href="sketch.js"></script>
+    <link rel= "stylesheet" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"> </script>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+
+  <div class=headerwork >
+    <a href=index.html>
+        <p id=jonathan class='bold'>← Work</p>
+    </a>
+  <a href='about.html'>
+    <p id=about class='black'>About + Contact</p>
+  </a>
+  </div>
+
+
+  <div class='footer'>
+  <button onclick="myFunction()" class=info>
+  + Info
+  </button>
+  </div>
+
+
+
+
+
+<div id=body2 class='wrappergrid'>
+    <div>
+    <img src="images/IMG_5650.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_2235.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_2705.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_9252.JPG">
+    </div>
+
+
+</div>
+
+  <div id=supergay class='purple hidden' >
+
+    I designed this poster in highschool for my friend's student run organization, VOCO, to promote their up-coming guest speaker events.
+    The events featured a U.S. Ambassador, a state department official, and other activists. This student run-organization provided me with the majority
+    of my first poster prompts.
+
+
+
+
+
+  </div>
+
+  <script>
+  $( "button" ).click(function() {
+    $( "#supergay" ).slideToggle( "slow", function(){
+      $( "#supergay" ).removeClass( "hidden" )
+    });
+  });
+  </script>
+
+  <script>
+  function myFunction() {
+  var x = document.getElementById("info");
+  if (x.innerHTML === "Info") {
+    x.innerHTML = "✕";
+  } else {
+    x.innerHTML = "Info";
+  }
+  }
+  </script>
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
