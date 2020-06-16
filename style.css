@@ -1,0 +1,144 @@
+@font-face {
+font-family: 'Inter';
+font-style:  normal;
+font-weight: 400;
+font-display: swap;
+src: url("Inter-Regular.woff2?v=3.13") format("woff2"),
+     url("Inter-Regular.woff?v=3.13") format("woff");
+}
+
+@font-face {
+font-family: 'Inter';
+font-style:  normal;
+font-weight: 500;
+font-display: swap;
+src: url("Inter-Medium.woff2?v=3.13") format("woff2"),
+     url("Inter-Medium.woff?v=3.13") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 3%;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background: white;
+    width: 94%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  height: 9vh;
+  width: 94%;
+  background: white;
+  font-size: 30px;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+
+}
+
+.tall {
+  display: flex;
+  height: 65vh;
+}
+
+
+.jonathan{
+display: flex;
+text-decoration: none;
+flex-direction: row;
+width: 100%;
+align-items: flex-start;
+justify-content: flex-start;
+color: black;
+transition: color 200ms;
+}
+
+.jonathan:hover {
+  color: grey;
+}
+
+.info {
+  display: flex;
+  justify-content: left;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  margin-top: 11vh;
+  max-width: 1300px;
+  font-size: 30px;
+}
+
+.video {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3%;
+}
+
+.about{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  transition: color 200ms;
+}
+
+.about:hover {
+  color: grey;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.image {
+  margin-top: 7vh;
+
+}
+img {
+  margin-bottom: 3%;
+  display: flex;
+  height: auto;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  left: 30px;
+  color: green;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .header {
+    font-size: 5vw;
+  }
+
+  .info {
+    font-size: 5vw;
+  }
